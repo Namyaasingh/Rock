@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rock.css">
+
+</head>
+
+<body>
+    <div class="Firstbox">
+        <div class="Score_board">
+            <div class="Title">
+                <img src="rock.jpeg">
+            </div>
+            <div class="score">
+                <p>Score</p>
+                <h1>0</h1>
+            </div>
+        </div>
+
+        <div class="Secondbox">
+            <div class="Rock">
+                <img src="Rock.jpeg" onclick="pickUserHand('Rock')">
+            </div>
+
+            <div class="Paper">
+                <img src="Paper.jpeg" onclick="pickUserHand('Paper')">
+            </div>
+
+            <div class="Scissor">
+                <img src="Scissor.jpeg" onclick="pickUserHand('Scissor')">
+            </div>
+
+        </div>
+
+
+        <div class="Contest">
+            <div class="userhand">
+                <h1>YOU PICKED</h1>
+                <div class="handImageContainer">
+                    <img id="userPickImage" src="Paper.jpeg">
+                </div>
+            </div>
+            <div class="referee">
+                <div class="decision">
+                    <h1>YOU WIN</h1>
+                </div>
+                <div class="NewGame" onclick="restartGame()">PlayGame</div>
+            </div>
+            <div class="computerhand">
+                <h1>THE HOUSE PICKED</h1>
+                <div class="handImageContainer">
+                    <img id="computerPickImage" src="Scissor.jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="rock.js"></script>
+</body>
+
+</html>
